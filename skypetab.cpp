@@ -150,7 +150,7 @@ QIcon SkypeTab::GetIcon()
 	QBrush back(QColor(40, 40, 120, 255));
 	QPen front(QColor(255, 255, 255, 255));
 	painter.setBrush(back);
-	painter.drawEllipse(QPoint(newPixmap.width()-7, 7), 7, 7);
+	painter.drawEllipse(QPoint(newPixmap.width()-8, 8), 7, 7);
 
 	painter.setPen(front);
 	QFont font=painter.font();
@@ -159,7 +159,7 @@ QIcon SkypeTab::GetIcon()
 	font.setPointSize(8);
 	painter.setFont(font);
 
-	painter.drawText(newPixmap.width()-14, 0, 14, 14, Qt::AlignHCenter | Qt::AlignVCenter, string);
+	painter.drawText(newPixmap.width()-15, 1, 14, 14, Qt::AlignHCenter | Qt::AlignVCenter, string);
 
 	return QIcon(newPixmap);
 }
